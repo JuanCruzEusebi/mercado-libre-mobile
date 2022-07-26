@@ -1,0 +1,133 @@
+/* Paleta de colores  ----------------------------------------------- */
+
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.header {
+    background-color: #EAC926;
+}
+
+img {
+    background-size: cover;
+    width: 100vw;
+}
+
+.img-logo {
+    padding: 20px;
+    width: 55%;
+}
+
+.hand-holding-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hand-holding-div p {
+    font-size: 14px;
+}
+
+/* Styling navbar items ----------------------------- */
+
+.ul-nav-items li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.ul-nav-items {
+    padding: 10px 0px 10px 0px;
+}
+
+.ul-nav-user li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.ul-nav-user {
+    padding: 10px 0px 10px 0px;
+}
+
+.ul-nav-user div {
+    display: flex;
+}
+
+/* Styling burger menu ---------------------------- */
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.burger-menu i {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    color: white;
+}
+
+/* Styling fonts ----------------------------------- */
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+/* 
+Styling main --------------------------- */
+
+.ultima-visita div {
+    margin-bottom: 25px; 
+}
+
+.ofertas div {
+    margin-bottom: 25px;
+}
+
+
+
+/* Styling footer ------------------------------- */
+
+.footer div {
+    text-align: center;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer div i {
+    color: #1259c3;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.footer div h3 {
+    color: #666;
+}
