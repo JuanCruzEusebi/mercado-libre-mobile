@@ -20,12 +20,7 @@ Verde: #39b54a; */
 
 img {
     background-size: cover;
-    width: 100vw;
-}
-
-.img-logo {
-    padding: 20px;
-    width: 55%;
+    width: 100%;
 }
 
 .hand-holding-div {
@@ -36,9 +31,10 @@ img {
 
 .hand-holding-div p {
     font-size: 14px;
+    margin-bottom: 15px;
 }
 
-/* Styling navbar items ----------------------------- */
+/* Styling navbar items & header ----------------------------- */
 
 .ul-nav-items li a {
     text-decoration: none;
@@ -47,6 +43,7 @@ img {
 }
 
 .ul-nav-items {
+    text-decoration: none;
     padding: 10px 0px 10px 0px;
 }
 
@@ -57,11 +54,65 @@ img {
 }
 
 .ul-nav-user {
+    text-decoration: none;
+}
+
+.ul-nav-user {
     padding: 10px 0px 10px 0px;
+}
+.ul-nav-user div li a {
+    text-decoration: none;
 }
 
 .ul-nav-user div {
     display: flex;
+}
+
+.img-logo {
+    width: 40%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 10px;
+}
+.search-bar {
+    width: 40%; 
+    display: flex; 
+    margin-right: 25px; 
+    padding-top: 10px;
+
+}
+.search-bar > input {   
+    height: 40%;  
+    width: 95%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 7px;
+}
+
+.navbar-top {
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.submit {
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    padding: 5px;
+}
+/* Mobile  */
+
+.ul-nav-user {
+    display: none;
+}
+.ul-nav-items  {
+    display: none;
 }
 
 /* Styling burger menu ---------------------------- */
@@ -85,12 +136,15 @@ h2 {
     font-size: 24px;
 }
 
-h3 {
+.price {
+    padding-top: 10px;
     font-size: 18px;
+
 }
 
-h4 {
+.discount {
     font-size: 16px;
+    color: #39b54a;
 }
 
 h5 {
@@ -100,17 +154,93 @@ h5 {
 p {
     font-size: 12px;
 }
+
+
+    
 /* 
 Styling main --------------------------- */
 
+body {
+    background-color: #ebebeb;
+}
+
+.single-product {
+    margin-top: 10px;
+}
+
 .ultima-visita div {
-    margin-bottom: 25px; 
+    margin-bottom: 10px; 
 }
 
-.ofertas div {
-    margin-bottom: 25px;
+.ultima-visita h2 {
+    color: #666;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin: auto;
 }
 
+.product-name {
+    display: none;
+    margin-left: 15px;
+}
+
+.ofertas h2 {
+    color: #666;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.main {
+    margin: auto;
+    width: 90vw;
+}
+
+.product-description { 
+    background-color: white;
+}
+
+.product-description h5 {    
+    padding-bottom: 15px;
+    color: #666;
+}
+
+
+.fa-truck {
+    margin-top: 10px;
+    border: 1px solid #39b54a;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 100%;
+    color: #39b54a;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.price-discount-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-bottom: 7px;
+}
+.price-discount-container p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price {
+    width: 30%; 
+    margin-left: 15px;   
+    padding: 0;
+}
+
+.discount {
+    width: 70%; 
+    margin-right: 15px;   
+}
 
 
 /* Styling footer ------------------------------- */
@@ -124,10 +254,81 @@ Styling main --------------------------- */
 
 .footer div i {
     color: #1259c3;
-    font-size: 28px;
+    font-size: 2em;
     margin: 10px;
 }
 
 .footer div h3 {
     color: #666;
+}
+
+.footer div p {
+    color: #666;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+/* Tablet ------------------------ */
+
+
+@media (min-width: 361px) {
+    .product-name {
+        display: block;
+    }
+    
+    .single-product {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        width: 40%;
+        flex-wrap: wrap;
+    }
+    .ul-nav-user {
+        display: block;
+    }
+    .ul-nav-items {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .ultima-visita  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* Desktop ----------------------- */
+
+
+@media (min-width: 769px) {
+    .navbar-top {        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-logo {
+        width: 17em;
+        padding: 10px 15px;
+    }
+    .hand-holding-div {
+        padding: 10px 15px;
+    }
+    .navbar-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul-nav-user div li a {
+        text-decoration: none;
+    }
+    .single-product {
+        width: 20%;
+    }
 }
