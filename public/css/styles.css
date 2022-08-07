@@ -27,6 +27,7 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    text-align: end;
 }
 
 .hand-holding-div p {
@@ -94,6 +95,7 @@ img {
     display: flex;    
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .submit {
@@ -166,6 +168,9 @@ body {
 
 .single-product {
     margin-top: 10px;
+    margin: auto;
+    max-width: 350px;
+    margin-bottom: 10px;
 }
 
 .ultima-visita div {
@@ -178,6 +183,8 @@ body {
     display: block;
     width: 100%;
     margin: auto;
+    max-width: 350px;
+    font-size: 5.5vw;    
 }
 
 .product-name {
@@ -190,6 +197,10 @@ body {
     display: block;
     width: 100%;
     margin: auto;
+    margin-bottom: 10px;
+    font-size: 5.5vw;   
+    max-width: 350px;
+
 }
 
 .main {
@@ -216,19 +227,20 @@ body {
     color: #39b54a;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 10px;
 
 }
 
 .price-discount-container {
     display: flex;
     justify-content: flex-start;
-    margin-top: 10px;
     padding-bottom: 7px;
 }
 .price-discount-container p {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .price {
@@ -239,7 +251,7 @@ body {
 
 .discount {
     width: 70%; 
-    margin-right: 15px;   
+    margin-left: 25px;   
 }
 
 
@@ -269,24 +281,82 @@ body {
 }
 
 
+/* Formulario  ----------------------------- */
+
+.formulario-main {
+    margin: 15px 150px;
+    background-color: grey;
+}
+
+.formulario-usuario {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.formulario-usuario > input {
+    margin: 10px 10px;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-birthday {    
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
 /* Tablet ------------------------ */
 
 
-@media (min-width: 361px) {
+@media (min-width: 502px) {
     .product-name {
         display: block;
     }
     
     .single-product {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
-        width: 40%;
+        width: 45%;
         flex-wrap: wrap;
     }
     .ul-nav-user {
-        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 5px;
+        list-style: none;
+    }
+    .ul-nav-user li a, .ul-nav-user i{
+        text-decoration: none;
+        color: black;   
+        font-size: 2.2vw;
+    }
+    .ul-nav-user div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+    }
+    .ul-nav-user div li {   
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .ul-nav-items {
-        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-left: 5px;
+    }
+    .ul-nav-items li a {
+        font-size: 2.2vw;
+        margin: 4px;
     }
     .burger-menu {
         display: none;
@@ -296,12 +366,54 @@ body {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-
     .ofertas {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    .navbar-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-bottom ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-bottom ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .discount {
+        display: block;
+        margin-left: 1rem;
+    }
+    .price, .discount {
+        margin-top: 1rem;
+    }
+    .product-description > i {
+        position: absolute;
+        margin-top: -1.5rem;
+        margin-left: 30vw;
+        font-size: 1rem;
+    }
+
+    .ofertas h2 {
+        font-size: 4vw;
+        margin-left: 15px;
+        max-width: none;
+    }   
+    .ultima-visita h2 {
+        font-size: 4vw;
+        max-width: none;
+
+    }
+
 
 }
 
@@ -312,7 +424,9 @@ body {
     .navbar-top {        
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;      
+        flex-wrap: nowrap;
+
     }
     .img-logo {
         width: 17em;
@@ -325,10 +439,51 @@ body {
         display: flex;
         justify-content: space-between;
     }
+    .navbar-bottom > * {
+        align-items: center;
+    }
     .ul-nav-user div li a {
         text-decoration: none;
     }
     .single-product {
         width: 20%;
     }
+    .ofertas h2 {
+        font-size: 4vw;
+        margin-left: 15px;
+        max-width: none;
+    }   
+    .ultima-visita h2 {
+        font-size: 4vw;
+        max-width: none;
+    }
+
+    .product-description > i {
+        position: absolute;
+        margin-top: -1.5rem;
+        margin-left: 12vw;
+        font-size: 0.9rem;
+    }
+    .single-product {
+        margin-top: 25px;
+    }
+    .price {
+        font-size: 0.9rem;
+    }
+    .discount {
+        font-size: 0.9rem;
+    }
+    .product-name {
+        font-size: 2vw;
+    }
+    .ul-nav-items li a {
+        font-size: 1.9vw;
+        margin: 4px;
+    }
+    .ul-nav-user li a, .ul-nav-user i{
+        text-decoration: none;
+        color: black;   
+        font-size: 1.9vw;
+    }
+
 }
