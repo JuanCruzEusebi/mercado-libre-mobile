@@ -12,6 +12,7 @@ Verde: #39b54a; */
     margin: 0;
     padding: 0;
     font-family: 'roboto', sans-serif;
+    transition: all 0.5s;
 }
 
 .header {
@@ -37,6 +38,9 @@ img {
 
 /* Styling navbar items & header ----------------------------- */
 
+.ul-nav-user div li a {
+    text-decoration: none;
+}
 .ul-nav-items li a {
     text-decoration: none;
     color: black;
@@ -190,6 +194,7 @@ body {
 .product-name {
     display: none;
     margin-left: 15px;
+    transition: all 0.5s;
 }
 
 .ofertas h2 {
@@ -228,6 +233,7 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
+    transition: all 0.5s;
 
 }
 
@@ -310,6 +316,11 @@ body {
 
 }
 
+/* Animaciones  ------------------*/
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
 
 
 /* Tablet ------------------------ */
@@ -321,9 +332,9 @@ body {
     }
     
     .single-product {
-        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
         width: 45%;
         flex-wrap: wrap;
+        transition: all 0.5s;
     }
     .ul-nav-user {
         display: flex;
@@ -426,8 +437,10 @@ body {
         align-items: center;
         justify-content: space-between;      
         flex-wrap: nowrap;
-
+        height: 100%;
     }
+
+
     .img-logo {
         width: 17em;
         padding: 10px 15px;
@@ -442,19 +455,17 @@ body {
     .navbar-bottom > * {
         align-items: center;
     }
-    .ul-nav-user div li a {
-        text-decoration: none;
-    }
+
     .single-product {
         width: 20%;
     }
     .ofertas h2 {
-        font-size: 4vw;
+        font-size: 3vw;
         margin-left: 15px;
         max-width: none;
     }   
     .ultima-visita h2 {
-        font-size: 4vw;
+        font-size: 3vw;
         max-width: none;
     }
 
@@ -474,16 +485,39 @@ body {
         font-size: 0.9rem;
     }
     .product-name {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     .ul-nav-items li a {
-        font-size: 1.9vw;
+        font-size: 1.3vw;
         margin: 4px;
+        padding-left: 15px;
     }
     .ul-nav-user li a, .ul-nav-user i{
         text-decoration: none;
         color: black;   
-        font-size: 1.9vw;
+        font-size: 1.3vw;
+    }
+    .ul-nav-user div {
+        padding-right: 15px;
+    }
+    .hand-holding-div i, .hand-holding-div p {
+        font-size: 1.3vw;
+    }
+    .product-name {
+        display: none;
+    }
+    .single-product:hover > .product-description > .product-name {
+        display: block;
+    }
+    .single-product:hover  {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+    .ultima-visita {
+        margin-bottom: 20px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
     }
 
 }
