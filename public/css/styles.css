@@ -12,7 +12,6 @@ Verde: #39b54a; */
     margin: 0;
     padding: 0;
     font-family: 'roboto', sans-serif;
-    transition: all 0.5s;
 }
 
 .header {
@@ -24,17 +23,7 @@ img {
     width: 100%;
 }
 
-.hand-holding-div {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: end;
-}
 
-.hand-holding-div p {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
 
 /* Styling navbar items & header ----------------------------- */
 
@@ -74,21 +63,35 @@ img {
 }
 
 .img-logo {
-    width: 40%;
+    width: 45%;
     margin-left: 0;
     padding-left: 0;
     padding-top: 10px;
 }
 .search-bar {
-    width: 40%; 
+    width: 45%; 
     display: flex; 
-    margin-right: 25px; 
+    margin-right: 10px; 
     padding-top: 10px;
-
 }
+.hand-holding-div {
+    display: flex;
+    justify-content: center;
+    text-align: end;
+    width: 45%;
+    height: 100%; 
+    padding-top: 10px;
+}
+
+.hand-holding-div p {
+    font-size: 14px;
+    margin-bottom: 15px;  
+    text-align: center;  
+}
+
 .search-bar > input {   
-    height: 40%;  
-    width: 95%;
+    height: 100%;  
+    width: 100%;
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -112,6 +115,9 @@ img {
     color: #666;
     padding: 5px;
 }
+
+
+
 /* Mobile  */
 
 .ul-nav-user {
@@ -175,10 +181,7 @@ body {
     margin: auto;
     max-width: 350px;
     margin-bottom: 10px;
-}
 
-.ultima-visita div {
-    margin-bottom: 10px; 
 }
 
 .ultima-visita h2 {
@@ -194,7 +197,6 @@ body {
 .product-name {
     display: none;
     margin-left: 15px;
-    transition: all 0.5s;
 }
 
 .ofertas h2 {
@@ -263,6 +265,11 @@ body {
 
 /* Styling footer ------------------------------- */
 
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer div {
     text-align: center;
     margin: 10px;
@@ -285,6 +292,9 @@ body {
     font-weight: 400;
     font-size: 13px;
 }
+
+
+
 
 
 /* Formulario  ----------------------------- */
@@ -424,6 +434,13 @@ body {
         max-width: none;
 
     }
+    .search-bar > input {   
+        padding: 10px;
+    }
+    .hand-holding-div i, .hand-holding-div p {
+        font-size: 2.2vw;        
+        margin-top: 25px;
+    }
 
 
 }
@@ -439,10 +456,16 @@ body {
         flex-wrap: nowrap;
         height: 100%;
     }
-
+    .search-bar > input {   
+        padding: 9px;
+    }
+    .search-bar {   
+        padding: 9px;
+        margin-left: 30px;
+    }
 
     .img-logo {
-        width: 17em;
+        width: 32vw;
         padding: 10px 15px;
     }
     .hand-holding-div {
@@ -460,15 +483,18 @@ body {
         width: 20%;
     }
     .ofertas h2 {
-        font-size: 3vw;
+        font-size: 1.7rem;
         margin-left: 15px;
         max-width: none;
     }   
     .ultima-visita h2 {
-        font-size: 3vw;
+        margin-top: 15px;
+        font-size: 1.7rem;
         max-width: none;
     }
-
+    .product-description {
+        padding-bottom: 40px;
+    }
     .product-description > i {
         position: absolute;
         margin-top: -1.5rem;
@@ -477,6 +503,8 @@ body {
     }
     .single-product {
         margin-top: 25px;
+        padding-bottom: 0px;
+        max-height: 335px;
     }
     .price {
         font-size: 0.9rem;
@@ -486,28 +514,36 @@ body {
     }
     .product-name {
         font-size: 1vw;
+        height: 100%;
+        width: 100%;
     }
     .ul-nav-items li a {
-        font-size: 1.3vw;
+        font-size: 1rem;
         margin: 4px;
         padding-left: 15px;
     }
     .ul-nav-user li a, .ul-nav-user i{
         text-decoration: none;
         color: black;   
-        font-size: 1.3vw;
+        font-size: 1rem;
     }
     .ul-nav-user div {
         padding-right: 15px;
     }
     .hand-holding-div i, .hand-holding-div p {
-        font-size: 1.3vw;
+        font-size: 1rem;
+        margin-top: 25px;
     }
+
     .product-name {
         display: none;
     }
+
     .single-product:hover > .product-description > .product-name {
         display: block;
+    }
+    .product-name {
+        padding: 0;
     }
     .single-product:hover  {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
@@ -517,7 +553,16 @@ body {
     }
     .footer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-top div {
+        width: 30%;
+    }
+
 
 }
