@@ -116,6 +116,9 @@ img {
     padding: 5px;
 }
 
+.homebanner {
+    max-height: 70%;
+}
 
 
 /* Mobile  */
@@ -299,15 +302,34 @@ body {
 
 /* Formulario  ----------------------------- */
 
+
+.form-main-section {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .formulario-main {
-    margin: 15px 150px;
-    background-color: grey;
+    background-color: lightgrey;
+    margin: auto;
+    width: 80%;
+    max-width: 400px;
+    height: 90%;
+    border-radius: 7px;
 }
 
 .formulario-usuario {
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
+    width: 90%;
+    height: 90%;
+}
+
+.user-data label {
+    text-align: center;
+    padding-top: 15px;
 }
 
 .formulario-usuario > input {
@@ -317,14 +339,137 @@ body {
 .user-data {
     display: flex;
     flex-direction: column;
-
+}
+.user-data input {
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
 }
 
 .user-birthday {    
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 15px;
 }
+.user-birthday input {
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+}
+.user-birthday label {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.user-profile {
+    text-align: center;
+}
+
+.user-profile-label {
+    padding-bottom: 25px;
+}
+
+.user-profile-type {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-comprador {
+    display: flex;
+    width: 40%;    
+}
+.user-comprador label{
+    margin-right: 5px;
+}
+.user-vendedor {
+    display: flex;
+    width: 40%;
+}
+.user-vendedor label {
+    margin-right: 5px;  
+}
+
+.user-intereses {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.user-intereses label{
+    display: flex;
+    align-self: center;
+}
+.user-label {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.user-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 10px;
+}
+.user-option input {
+    margin: 0px 15px;
+}
+
+.username-form {
+    display: flex;
+    flex-direction: column;
+}
+.username-form label{
+    padding-top: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.password-form label{
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.username-form input {
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+}
+.password-form input{
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+}
+
+.login-btn {
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px 8px;
+    width: 50%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 4px;    
+    
+}
+
+.login-main-section {
+    margin: 35px 0px;
+    padding: 20px;
+}
+
 
 /* Animaciones  ------------------*/
 
@@ -518,14 +663,14 @@ body {
         width: 100%;
     }
     .ul-nav-items li a {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin: 4px;
         padding-left: 15px;
     }
     .ul-nav-user li a, .ul-nav-user i{
         text-decoration: none;
         color: black;   
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .ul-nav-user div {
         padding-right: 15px;
@@ -564,5 +709,22 @@ body {
         width: 30%;
     }
 
-
 }
+
+@media (min-width: 1228px) {
+    .ul-nav-items li a {
+        font-size: 1rem;
+        margin: 4px;
+        padding-left: 15px;
+    }
+    .ul-nav-user li a, .ul-nav-user i{
+        text-decoration: none;
+        color: black;   
+        font-size: 1rem;
+    }
+    .navbar-top {
+        padding-bottom: 30px;
+    }
+}
+
+/* /* formularios ----  */
