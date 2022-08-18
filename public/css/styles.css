@@ -302,6 +302,38 @@ body {
 
 /* Formulario  ----------------------------- */
 
+.profile-pic-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.profile-pic-container label {
+    margin-bottom: 20px;
+}
+
+
+
+.submit-btn {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 7px 20px;
+    width: 90%;
+    border-radius: 7px;
+    font-size: 1rem;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+}
 
 .form-main-section {
     max-width: 500px;

@@ -60,14 +60,16 @@
                 <form action="" class="formulario-usuario">
                     <div class="user-data">
                         <label for="">Datos personales</label>
-                        <input type="text" placeholder="Nombre y Apellido">
-                        <input type="text" placeholder="Nombre de usuario">
+                        <input type="text" required minlength="5" maxlength="12" placeholder="Nombre y Apellido">
+                        <input type="text" placeholder="Nombre de usuario" required minlength="5" maxlength="12">
                         <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Confirmar contraseña">
                     </div>
                     <div class="user-birthday">
                         <label for="">Fecha de Nacimiento</label>
                         <input type="date">
-                        <input type="text" placeholder="Domiciliio">      
+                        <input type="text" placeholder="Domiciliio" required minlength="5" >      
                     </div>
                     <div class="user-profile">
                         <label class="user-profile-label" for="">Perfil del usuario</label>
@@ -105,6 +107,13 @@
                             <label for="">Vida sana</label>
                         </div>
                     </div>
+                    <div class="profile-pic-container">
+                        <label for="">Selecciona tu foto de perfil</label>
+                        <input type="file" name="filename">
+                    </div>
+                    <a class="submit-btn" >
+                        <button type="submit">Crear cuenta</button>
+                    </a>
                 </form> 
             </div>  
         </section>
